@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Neuraception
+  site: 'https://www.neuraception.com'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Neuraception
+    template: '%s — Neuraception'
+  description: "\U0001F680 Neuraception provides cutting-edge AI vision models for classification, detection, segmentation, and heatmaps, all tailored to your specific needs. Offering complete data security with offline, isolated operations—no more cloud costs or vulnerabilities."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Neuraception
     images:
       - url: '~/assets/images/default.png'
         width: 1200
