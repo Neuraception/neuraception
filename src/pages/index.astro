@@ -35,16 +35,16 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.svg', alt: 'Neuraception Hero Image' }}
   >
     <Fragment slot="title">
-       <span class="hidden xl:inline">Empowering Vision with</span>
+      <span class="hidden xl:inline">Empowering Vision and Language with</span>
       <span class="text-accent dark:text-white highlight"> Neuraception's AI</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Neuraception</span> provides cutting-edge AI vision models for classification, detection, segmentation, and heatmaps, all tailored to your specific needs.</span
+        <span class="font-semibold">Neuraception</span> provides cutting-edge AI solutions for both vision and language, including custom models for classification, detection, segmentation, heatmaps, and NLP tasks.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Neuraception: AI-driven Vision Solutions.</span>
-      Offering complete data security with offline, isolated operations—no more cloud costs or vulnerabilities.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Neuraception: AI-driven Vision and Language Solutions.</span>
+      Offering complete data security with both offline and cloud-based operations—no more cloud costs or vulnerabilities.
     </Fragment>
   </Hero>
 
@@ -58,13 +58,19 @@ const metadata = {
     id="features"
     tagline="Features"
     title="What Neuraception Offers"
-    subtitle="Harness the power of AI with our state-of-the-art vision models, optimized for your unique requirements."
+    subtitle="Harness the power of AI with our state-of-the-art vision and language models, optimized for your unique requirements."
     items={[
       {
         title: 'Custom AI Vision Models',
         description:
           'Whether it’s classification, detection, segmentation, or custom requirements, our models are built to excel.',
         icon: 'tabler:tools',
+      },
+      {
+        title: 'Natural Language Processing (NLP) Solutions',
+        description:
+          'From clustering free text logs to visual analysis of relationships between text data, our NLP models are tailored to your specific needs.',
+        icon: 'tabler:text-recognition',
       },
       {
         title: 'Ready-to-use Solutions',
@@ -75,7 +81,7 @@ const metadata = {
       {
         title: 'Data Security',
         description:
-          'Neuraception’s solutions operate completely offline, ensuring total data privacy and security.',
+          'Neuraception’s solutions can operate completely offline or in the cloud, ensuring total data privacy and security.',
         icon: 'tabler:shield-lock',
       },
       {
@@ -93,7 +99,7 @@ const metadata = {
       {
         title: 'Flexible Deployment Options',
         description:
-          'Deploy our AI models on state-of-the-art devices like NVIDIA Jetson or local servers, ensuring smooth and efficient performance.',
+          'Deploy our AI models on state-of-the-art devices like NVIDIA Jetson or local/cloud servers, ensuring smooth and efficient performance.',
         icon: 'tabler:cpu',
       },
     ]}
@@ -109,19 +115,19 @@ const metadata = {
       {
         title: 'State-of-the-Art AI Models',
         description:
-          'Utilizing the latest advancements in AI to deliver top-tier vision models that exceed expectations.',
+          'Utilizing the latest advancements in AI to deliver top-tier vision and language models that exceed expectations.',
         icon: 'tabler:flask',
       },
       {
-        title: 'Secure Offline Operation',
+        title: 'Secure Offline and Cloud Operations',
         description:
-          'Our solutions run entirely offline, providing unmatched data security and eliminating the need for cloud services.',
+          'Our solutions run entirely offline or in the cloud, providing unmatched data security and flexibility to meet your needs.',
         icon: 'tabler:shield-lock',
       },
       {
         title: 'Tailored to Your Industry',
         description:
-          'Whether you’re in manufacturing, healthcare, or any other sector, we customize our models to meet your needs. Our solutions can be deployed on embedded GPU devices like NVIDIA Jetson, ensuring optimal performance in any environment.',
+          'Whether you’re in manufacturing, healthcare, or any other sector, we customize our vision and NLP models to meet your needs. Our solutions can be deployed on embedded GPU devices like NVIDIA Jetson or in the cloud, ensuring optimal performance in any environment.',
         icon: 'tabler:device-desktop-analytics',
       },
     ]}
@@ -132,7 +138,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern AI foundations</h3>
-      Empower your operations with our secure and scalable AI vision solutions, deployable on cutting-edge platforms like NVIDIA Jetson for unparalleled performance.
+      Empower your operations with our secure and scalable AI vision and NLP solutions, deployable on cutting-edge platforms like NVIDIA Jetson or in the cloud for unparalleled performance.
     </Fragment>
 
     <Fragment slot="bg">
@@ -153,7 +159,7 @@ const metadata = {
       {
         title: 'Multiple deployment options',
         description:
-          'Deploy our models on NVIDIA Jetson, on-site servers, or PCs, with full support for offline operation.',
+          'Deploy our models on NVIDIA Jetson, on-site servers, PCs, or in the cloud, with full support for offline and cloud operation.',
         icon: 'tabler:cpu',
       },
       {
@@ -165,7 +171,7 @@ const metadata = {
       {
         title: 'Real-time processing',
         description:
-          'Experience real-time inferencing and data insights with Neuraception’s optimized models.',
+          'Experience real-time inferencing and data insights with Neuraception’s optimized vision and NLP models.',
         icon: 'tabler:clock',
       },
     ]}
@@ -202,7 +208,7 @@ const metadata = {
       {
         title: 'Efficient resource utilization',
         description:
-          'Skip the heavy costs and resources associated with cloud-based solutions with our offline models.',
+          'Skip the heavy costs and resources associated with cloud-based solutions with our flexible offline or cloud models.',
         icon: 'tabler:chart-line',
       },
       {
@@ -243,7 +249,7 @@ const metadata = {
       {
         title: 'Step 3: <span class="font-medium">Deploy</span>',
         description:
-          'Deploy your customized AI solution on your chosen platform, be it an embedded GPU device like NVIDIA Jetson or a local server, with full support from our team.',
+          'Deploy your customized AI solution on your chosen platform, be it an embedded GPU device like NVIDIA Jetson, a local server, or in the cloud, with full support from our team.',
         icon: 'tabler:rocket',
       },
       {
@@ -266,31 +272,31 @@ const metadata = {
     items={[
       {
         title: 'Classification Models',
-        description: "Accurately identify and categorize objects in images or videos, tailored to your specific needs.",
+        description: "Accurately identify and categorize objects in images, videos, or text, tailored to your specific needs.",
         icon: 'tabler:layout-grid',
       },
       {
         title: 'Detection Models',
         description:
-          "Our detection models are designed for precision, ensuring accurate identification of objects within any frame.",
+          "Our detection models are designed for precision, ensuring accurate identification of objects within any frame or text.",
         icon: 'tabler:target',
       },
       {
         title: 'Segmentation Models',
         description:
-          'Delivering pixel-perfect segmentation, our models provide detailed insights into every image.',
+          'Delivering pixel-perfect segmentation, our models provide detailed insights into every image or text document.',
         icon: 'tabler:chart-pie',
       },
       {
-        title: 'Heatmaps',
+        title: 'Heatmaps and Clustering',
         description:
-          "Visualize data intensity with our models, ideal for analysis and pattern recognition.",
+          "Visualize data intensity and clusters with our models, ideal for analysis and pattern recognition in both visual and textual data.",
         icon: 'tabler:chart-donut',
       },
       {
         title: 'Custom Solutions',
         description:
-          'Need something unique? We offer custom AI solutions tailored to your exact requirements.',
+          'Need something unique? We offer custom AI solutions tailored to your exact requirements in vision and NLP.',
         icon: 'tabler:bulb',
       },
     ]}
@@ -311,7 +317,7 @@ const metadata = {
       {
         title: 'Why choose Neuraception?',
         description:
-          "Neuraception excels in providing secure, offline AI vision models that are tailored to your specific needs. Our commitment to data security and cutting-edge technology sets us apart.",
+          "Neuraception excels in providing secure, offline and cloud-based AI models for both vision and language that are tailored to your specific needs. Our commitment to data security and cutting-edge technology sets us apart.",
         icon: 'tabler:shield-check',
       },
       {
@@ -329,7 +335,7 @@ const metadata = {
       {
         title: "What makes Neuraception's solutions secure?",
         description:
-          "Our models operate completely offline, ensuring that your data is never exposed to the public internet. This eliminates the risks associated with cloud-based solutions.",
+          "Our models operate completely offline or in the cloud, ensuring that your data is secure and never exposed to unnecessary risks. This eliminates the vulnerabilities associated with traditional cloud-based solutions.",
         icon: 'tabler:lock',
       },
       {
@@ -352,7 +358,7 @@ const metadata = {
   <Stats
     stats={[
       { title: 'Clients Served', amount: '1+', icon: 'tabler:users' },
-      { title: 'Vision Models Deployed', amount: '1+', icon: 'tabler:device-desktop-analytics' },
+      { title: 'AI Models Deployed', amount: '1+', icon: 'tabler:device-desktop-analytics' },
       { title: 'Industries Supported', amount: '5+', icon: 'tabler:building' },
       { title: 'Years of AI Experience', amount: '5+', icon: 'tabler:clock' },
     ]}
@@ -372,11 +378,11 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Neuraception&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">AI Vision Models</span>
+      Neuraception&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">AI Vision & Language Models</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Discover the future of AI-driven vision solutions. <br class="hidden md:inline" />Join us today to see what Neuraception can do for you.
+      Discover the future of AI-driven vision and language solutions. <br class="hidden md:inline" />Join us today to see what Neuraception can do for you.
     </Fragment>
   </CallToAction>
 </Layout>

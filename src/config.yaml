@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Neuraception | AI Vision Solutions
+    default: Neuraception | AI Vision and NLP Solutions
     template: '%s — Neuraception'
-  description: "Neuraception provides cutting-edge AI vision models for classification, detection, segmentation, and heatmaps. Tailored for industries like manufacturing, healthcare, automotive, and more, our solutions offer complete data security with offline operations, eliminating cloud costs and vulnerabilities."
+  description: "Neuraception offers cutting-edge AI solutions for vision and natural language processing, including classification, detection, segmentation, heatmaps, and NLP custom models. Our solutions are tailored for industries like manufacturing, healthcare, automotive, and more, providing complete data security with both offline and cloud operations."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Neuraception
-    title: 'Neuraception | AI Vision Solutions for Industry'
-    description: "Explore Neuraception's advanced AI vision models designed to optimize your operations with precise classification, detection, segmentation, and more. Perfect for manufacturing, healthcare, automotive, and beyond."
+    title: 'Neuraception | AI Vision and NLP Solutions for Industry'
+    description: "Explore Neuraception's advanced AI vision and NLP models designed to optimize your operations with precise classification, detection, segmentation, clustering, and more. Perfect for manufacturing, healthcare, automotive, and beyond."
     url: 'https://www.neuraception.com'
     images:
       - url: '~/assets/images/hero-image.svg'
         width: 1200
         height: 628
-        alt: 'Neuraception AI Vision Solutions'
+        alt: 'Neuraception AI Vision and NLP Solutions'
     type: website
   twitter:
     handle: '@neuraception'
@@ -48,7 +48,7 @@ apps:
       metadata:
         title:
           template: '%s | Neuraception Blog'
-        description: 'Read the latest insights, news, and updates on AI vision models and industry applications from Neuraception.'
+        description: 'Read the latest insights, news, and updates on AI vision and NLP models, along with industry applications from Neuraception.'
 
     list:
       isEnabled: true
@@ -56,8 +56,8 @@ apps:
       robots:
         index: true
       metadata:
-        title: 'Neuraception Blog | AI Vision Insights'
-        description: 'Discover articles and posts on AI vision solutions, industry trends, and case studies.'
+        title: 'Neuraception Blog | AI Vision and NLP Insights'
+        description: 'Discover articles and posts on AI vision and NLP solutions, industry trends, and case studies.'
 
     category:
       isEnabled: true

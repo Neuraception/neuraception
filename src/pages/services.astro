@@ -17,7 +17,7 @@ const metadata = {
   <Hero
     tagline="Services"
     title="Transform Your Operations with Our AI Solutions"
-    subtitle="Explore our advanced AI vision models tailored to various industries and applications. From precision detection to detailed segmentation, we provide the tools you need to excel. Our AI models can be deployed on IoT edge devices like NVIDIA Jetson or on local servers, ensuring high performance and security. We offer domain-specific custom AI vision models, with the option for a Proof of Concept (POC) before full deployment."
+    subtitle="Explore our advanced AI vision and NLP/LLM models tailored to various industries and applications. From precision detection to detailed segmentation, and from text clustering to visual analysis, we provide the tools you need to excel. Our AI models can be deployed on IoT edge devices like NVIDIA Jetson, on local servers, or in the cloud, ensuring high performance and security. We offer domain-specific custom AI vision and NLP/LLM models, with the option for a Proof of Concept (POC) before full deployment."
     actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
@@ -28,7 +28,7 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Explore Our AI Vision Solutions"
+    title="Explore Our AI Vision and NLP/LLM Solutions"
     subtitle="Discover our offerings below to enhance and optimize your operations."
     columns={3}
     items={[
@@ -50,15 +50,15 @@ const metadata = {
         icon: 'tabler:chart-pie',
       },
       {
-        title: 'Heatmaps',
+        title: 'Heatmaps and Clustering',
         description:
-          'Visualize data intensity with our solutions, ideal for identifying patterns and trends in your operations.',
+          'Visualize data intensity and patterns with our solutions, ideal for identifying trends in both visual and textual data.',
         icon: 'tabler:chart-donut',
       },
       {
         title: 'Custom AI Solutions',
         description:
-          'We offer tailored AI solutions that cater to your specific needs, ensuring that our models align perfectly with your goals. Deploy our models on NVIDIA Jetson or local servers for optimal performance.',
+          'We offer tailored AI solutions that cater to your specific needs, ensuring that our models align perfectly with your goals. Deploy our models on NVIDIA Jetson, local servers, or in the cloud for optimal performance.',
         icon: 'tabler:bulb',
       },
       {
@@ -68,9 +68,15 @@ const metadata = {
         icon: 'tabler:clock',
       },
       {
+        title: 'Text Clustering and Analysis',
+        description:
+          'Use our NLP/LLM solutions for clustering free text logs, analyzing relationships between textual data, and extracting actionable insights.',
+        icon: 'tabler:text-recognition',
+      },
+      {
         title: 'Data Security',
         description:
-          'Our solutions are built with security in mind, ensuring your data is handled with the utmost care and stored securely offline.',
+          'Our solutions are built with security in mind, ensuring your data is handled with the utmost care and stored securely offline or in the cloud.',
         icon: 'tabler:shield-lock',
       },
       {
@@ -127,7 +133,7 @@ const metadata = {
 
   <Features2
     title="Healthcare & Biomedical Applications"
-    subtitle="Enhance healthcare operations with precise and reliable AI solutions."
+    subtitle="Enhance healthcare operations with precise and reliable AI and NLP solutions."
     columns={3}
     items={[
       {
@@ -148,6 +154,12 @@ const metadata = {
           'Monitor patients in real-time, identifying changes in vital signs or other health indicators using AI.',
         icon: 'tabler:clock',
       },
+      {
+        title: 'Clinical Text Analysis',
+        description:
+          'Use NLP/LLM models to analyze clinical notes and reports, extracting valuable insights for better patient care.',
+        icon: 'tabler:text-recognition',
+      },
     ]}
   />
 
@@ -158,7 +170,7 @@ const metadata = {
     subtitle="Drive innovation in the automotive industry with our AI solutions."
     columns={3}
     items={[
-            {
+      {
         title: 'Quality Assurance',
         description:
           'Use AI for detailed inspection and quality control of automotive parts and assemblies.',
@@ -170,7 +182,12 @@ const metadata = {
           'Enhance road safety with AI-powered driver assistance systems, including object detection and lane alignment.',
         icon: 'tabler:car',
       },
-
+      {
+        title: 'In-Vehicle Experience',
+        description:
+          'Leverage NLP for voice recognition and natural language interfaces to enhance in-vehicle user experience.',
+        icon: 'tabler:microphone',
+      },
     ]}
   />
 
@@ -205,6 +222,12 @@ const metadata = {
           'Monitor and analyze energy infrastructure with AI, ensuring efficient operation and maintenance.',
         icon: 'tabler:bolt',
       },
+      {
+        title: 'Legal - Document Analysis',
+        description:
+          'Use NLP models to analyze legal documents, extracting key information and identifying relevant precedents.',
+        icon: 'tabler:file-text',
+      },
     ]}
   />
 
@@ -226,9 +249,9 @@ const metadata = {
         icon: 'tabler:settings',
       },
       {
-        title: 'Secure Offline Operations',
+        title: 'Secure Offline and Cloud Operations',
         description:
-          'Operate with confidence knowing that our AI models run completely offline, ensuring your data remains secure and private.',
+          'Operate with confidence knowing that our AI models can run completely offline or in the cloud, ensuring your data remains secure and private.',
         icon: 'tabler:shield-lock',
       },
       {
@@ -268,7 +291,7 @@ const metadata = {
       {
         title: 'Cost-Effectiveness',
         description:
-          'Reduce costs by leveraging our AI solutions, which eliminate the need for expensive cloud services and provide scalable, on-site processing.',
+          'Reduce costs by leveraging our AI solutions, which eliminate the need for expensive cloud services and provide scalable, on-site or cloud-based processing.',
         icon: 'tabler:coin',
       },
       {
