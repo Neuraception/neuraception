@@ -177,7 +177,7 @@ metadata:
   openGraph:
     site_name: 'Example'
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/hero-image.svg'
         width: 1200
         height: 628
     type: website
