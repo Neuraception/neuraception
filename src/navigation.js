@@ -6,10 +6,10 @@ export const headerData = {
           text: 'Services',
           href: getPermalink('/services'),
         },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
+        // {
+        //   text: 'Pricing',
+        //   href: getPermalink('/pricing'),
+        // },
         {
           text: 'Contact',
           href: getPermalink('/contact'),
@@ -19,7 +19,7 @@ export const headerData = {
           href: getPermalink('/about'),
         },
       ],
-  actions: [{ text: 'Download Brochure', href: '', target: '_blank' }],
+  // actions: [{ text: 'Download Brochure', href: '', target: '_blank' }],
 };
 
 export const footerData = {

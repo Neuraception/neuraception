@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import rocket from '../assets/images/main.gif';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
@@ -25,14 +26,14 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get started',
+        text: 'Get a quote',
         href: 'https://neuraception.com/start',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:message',
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.svg', alt: 'Neuraception Hero Image' }}
+    image={{ src: rocket.src, alt: 'Neuraception Hero Image' }}
   >
     <Fragment slot="title">
       <span class="hidden xl:inline">Empowering Vision and Language with</span>
@@ -176,7 +177,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/manuf.png',
+      src: '~/assets/images/seg-can.png',
       alt: 'Blueprint Image',
     }}
   >
@@ -218,7 +219,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/image.png',
       alt: 'AI Operations Image',
     }}
   >
@@ -264,7 +265,7 @@ const metadata = {
   />
 
   <!-- Features2 Widget ************** -->
-
+<!-- 
   <Features2
     title="Key components"
     subtitle="Essential features of Neuraception's AI Solutions"
@@ -304,11 +305,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- FAQs Widget ******************* -->
 
-  <FAQs
+  <!-- <FAQs
     title="Frequently Asked Questions"
     subtitle="Find out more about Neuraception's AI solutions."
     tagline="FAQs"
@@ -351,18 +352,18 @@ const metadata = {
         icon: 'tabler:help',
       },
     ]}
-  />
+  /> -->
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
       { title: 'Clients Served', amount: '1+', icon: 'tabler:users' },
       { title: 'AI Models Deployed', amount: '1+', icon: 'tabler:device-desktop-analytics' },
       { title: 'Industries Supported', amount: '5+', icon: 'tabler:building' },
       { title: 'Years of AI Experience', amount: '5+', icon: 'tabler:clock' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
@@ -370,10 +371,10 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get started',
-        href: 'https://neuraception.com/start',
+        text: 'Contact Us',
+        href: 'https://neuraception.com/contact',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:message',
       },
     ]}
   >

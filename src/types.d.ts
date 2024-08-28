@@ -154,11 +154,15 @@ export interface Price {
 }
 
 export interface Testimonial {
-  title?: string;
   testimonial?: string;
   name?: string;
   job?: string;
-  image?: string | unknown;
+  image?: {
+    src: string;
+    alt?: string;
+  };
+  title?: string;
+  githubLink?: string; // Add this line to support GitHub profile links
 }
 
 export interface Input {

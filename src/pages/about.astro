@@ -1,9 +1,12 @@
 ---
+import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
@@ -16,10 +19,7 @@ const metadata = {
 
   <Hero
     tagline="About us"
-    image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
-    }}
+  
   >
     <Fragment slot="title">
       Empowering Vision with <br />
@@ -32,7 +32,7 @@ const metadata = {
   </Hero>
 
   <!-- Stats Widget ****************** -->
-
+<!-- 
   <Stats
     title="Neuraception by the Numbers"
     stats={[
@@ -41,11 +41,11 @@ const metadata = {
       { title: 'Industries Served', amount: '50+' },
       { title: 'Years in AI', amount: '10+' },
     ]}
-  />
+  /> -->
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
+  <!-- <Features3
     title="Our AI Vision Solutions"
     subtitle="At Neuraception, we specialize in delivering top-tier AI vision models tailored to a variety of industries, ensuring that our clients receive solutions that are both powerful and secure."
     columns={3}
@@ -70,10 +70,10 @@ const metadata = {
         icon: 'tabler:template',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features3 Widget ************** -->
-
+<!-- 
   <Features3
     columns={3}
     isAfterContent={true}
@@ -119,11 +119,11 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'Colorful Image',
     }}
-  />
+  /> -->
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <Steps
     title="Our Values"
     subtitle="Neuraception is driven by a commitment to innovation, security, and client satisfaction. We strive to lead the industry with our advanced AI technologies while maintaining the highest standards of integrity and service."
     items={[
@@ -147,7 +147,7 @@ const metadata = {
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <!-- <Steps2
     title="Our Achievements"
     subtitle="Over the years, Neuraception has established itself as a leader in AI vision technology, with a strong global presence and numerous accolades to our name."
     isReversed={true}
@@ -174,33 +174,52 @@ const metadata = {
         icon: 'tabler:award',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Our Locations"
     tagline="Find Us"
-    columns={4}
+    columns={3}
     items={[
       {
         title: 'United States',
         description: '1234 AI Way, Innovation City, CA 94043',
       },
       {
-        title: 'Spain',
+        title: 'Bangladesh',
         description: '5678 AI Avenue, Madrid, 28001',
       },
       {
-        title: 'Australia',
+        title: 'Nepal',
         description: '9012 AI Boulevard, Sydney, NSW 2000',
       },
-      {
-        title: 'Brazil',
-        description: '3456 AI Street, São Paulo, 01000-000',
-      },
+  
     ]}
-  />
+  /> -->
+
+
+
+  <Testimonials
+  title="Team Neuraception"
+  testimonials={[
+    {
+      githubLink: 'https://api.github.com/users/manishrajosti',
+      job: 'CEO',
+    },
+    {
+      githubLink: 'https://api.github.com/users/claytonleonardcook',
+      job: 'Technical Lead',
+    },
+    {
+      githubLink: 'https://api.github.com/users/rakibulll',
+      job: 'Technical Lead',
+    },
+  ]}
+
+/>
+
 
   <!-- Features2 Widget ************** -->
 
@@ -210,9 +229,9 @@ const metadata = {
     columns={2}
     items={[
       {
-        title: 'Chat with Us',
+        title: 'Email Us',
         description:
-          'Our support team is available to assist you with any questions or issues you may have. Reach out to us via chat for quick responses.',
+          'Our support team is available to assist you with any questions or issues you may have. Reach out to us via email at support@neuraception.com for quick responses.',
         icon: 'tabler:messages',
       },
       {

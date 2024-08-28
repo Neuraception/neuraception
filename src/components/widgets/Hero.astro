@@ -2,6 +2,7 @@
 import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 import Background from '~/components/ui/Background.astro';
+import rocket from '../../assets/images/main.gif';
 
 import type { Hero as Props } from '~/types';
 
@@ -19,7 +20,7 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
+<section class="relative md:-mt-[24px] not-prose" {...id ? { id } : {}}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
     <slot name="bg">
       {bg ? <Fragment set:html={bg} /> : null}
@@ -72,16 +73,9 @@ const {
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
-                <Image
-                  class="mx-auto rounded-md w-full"
-                  widths={[400, 768, 1024, 2040]}
-                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                  loading="eager"
-                  width={1024}
-                  height={576}
-                  {...image}
-                />
+              <img {...image} width={"100%"} height={"auto"} alt="A rocketship in space." />
               )}
+
             </div>
           )
         }
