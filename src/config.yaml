@@ -1,7 +1,6 @@
 site:
   name: Neuraception
   site: 'https://neuraception.github.io/neuraception/'
-  base: '/'
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
