@@ -1,6 +1,6 @@
 site:
   name: Neuraception
-  site: 'https://www.neuraception.com'
+  site: 'https://neuraception.github.io/neuraception/'
   base: '/'
   trailingSlash: false
 
@@ -11,7 +11,7 @@ metadata:
   title:
     default: Neuraception | AI Vision and NLP Solutions
     template: '%s — Neuraception'
-  description: "Neuraception offers cutting-edge AI solutions for vision and natural language processing, including classification, detection, segmentation, heatmaps, and NLP custom models. Our solutions are tailored for industries like manufacturing, healthcare, automotive, and more, providing complete data security with both offline and cloud operations."
+  description: 'Neuraception offers cutting-edge AI solutions for vision and natural language processing, including classification, detection, segmentation, heatmaps, and NLP custom models. Our solutions are tailored for industries like manufacturing, healthcare, automotive, and more, providing complete data security with both offline and cloud operations.'
   robots:
     index: true
     follow: true
