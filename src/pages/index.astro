@@ -1,6 +1,5 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import rocket from '../assets/images/main.gif';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
@@ -33,7 +32,6 @@ const metadata = {
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: rocket.src, alt: 'Neuraception Hero Image' }}
   >
     <Fragment slot="title">
       <span class="hidden xl:inline">Empowering Vision and Language with</span>
@@ -42,9 +40,12 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Neuraception</span> provides cutting-edge AI solutions for both vision and language, including custom models for classification, detection, segmentation, heatmaps, and NLP tasks.</span
+        <span class="font-semibold">Neuraception</span> provides cutting-edge AI solutions for both vision and language,
+        including custom models for classification, detection, segmentation, heatmaps, and NLP tasks.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Neuraception: AI-driven Vision and Language Solutions.</span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"
+        >Neuraception: AI-driven Vision and Language Solutions.</span
+      >
       Offering complete data security with both offline and cloud-based operations—no more cloud costs or vulnerabilities.
     </Fragment>
   </Hero>
@@ -94,7 +95,7 @@ const metadata = {
       {
         title: 'Tailored for Your Needs',
         description:
-          "We work closely with you to customize our AI solutions, ensuring they meet your exact specifications.",
+          'We work closely with you to customize our AI solutions, ensuring they meet your exact specifications.',
         icon: 'tabler:adjustments-horizontal',
       },
       {
@@ -138,8 +139,11 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern AI foundations</h3>
-      Empower your operations with our secure and scalable AI vision and NLP solutions, deployable on cutting-edge platforms like NVIDIA Jetson or in the cloud for unparalleled performance.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Building on modern AI foundations
+      </h3>
+      Empower your operations with our secure and scalable AI vision and NLP solutions, deployable on cutting-edge platforms
+      like NVIDIA Jetson or in the cloud for unparalleled performance.
     </Fragment>
 
     <Fragment slot="bg">
@@ -165,8 +169,7 @@ const metadata = {
       },
       {
         title: 'Fully responsive solutions',
-        description:
-          "Our models are designed to adapt and perform optimally across various devices and setups.",
+        description: 'Our models are designed to adapt and perform optimally across various devices and setups.',
         icon: 'tabler:devices',
       },
       {
@@ -196,8 +199,7 @@ const metadata = {
     items={[
       {
         title: 'Enhanced operational efficiency',
-        description:
-          'Leverage our AI to streamline your processes, improve accuracy, and reduce operational costs.',
+        description: 'Leverage our AI to streamline your processes, improve accuracy, and reduce operational costs.',
         icon: 'tabler:trending-up',
       },
       {
@@ -243,8 +245,7 @@ const metadata = {
       },
       {
         title: 'Step 2: <span class="font-medium">Customize</span>',
-        description:
-          "Work with our team to tailor our AI models to your exact specifications, ensuring a perfect fit.",
+        description: 'Work with our team to tailor our AI models to your exact specifications, ensuring a perfect fit.',
         icon: 'tabler:adjustments-horizontal',
       },
       {
@@ -265,7 +266,7 @@ const metadata = {
   />
 
   <!-- Features2 Widget ************** -->
-<!-- 
+  <!-- 
   <Features2
     title="Key components"
     subtitle="Essential features of Neuraception's AI Solutions"
@@ -379,11 +380,14 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Neuraception&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">AI Vision & Language Models</span>
+      Neuraception&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"
+        >AI Vision & Language Models</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
-      Discover the future of AI-driven vision and language solutions. <br class="hidden md:inline" />Join us today to see what Neuraception can do for you.
+      Discover the future of AI-driven vision and language solutions. <br class="hidden md:inline" />Join us today to
+      see what Neuraception can do for you.
     </Fragment>
   </CallToAction>
 </Layout>

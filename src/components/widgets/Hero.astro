@@ -2,7 +2,6 @@
 import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 import Background from '~/components/ui/Background.astro';
-import rocket from '../../assets/images/main.gif';
 
 import type { Hero as Props } from '~/types';
 
@@ -13,22 +12,15 @@ const {
 
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
 
   id,
-  bg = await Astro.slots.render('bg'),
 } = Astro.props;
 ---
 
-<section class="relative md:-mt-[24px] not-prose" {...id ? { id } : {}}>
-  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-    <slot name="bg">
-      {bg ? <Fragment set:html={bg} /> : null}
-    </slot>
-  </div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+<section class="hero relative md:-mt-[24px] not-prose h-screen" {...id ? { id } : {}}>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 z-10">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-    <div class="py-12 md:py-20">
+    <div>
       <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
         {
           tagline && (
@@ -48,7 +40,7 @@ const {
         }
         <div class="max-w-3xl mx-auto">
           {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
-          {
+          <!-- {
             actions && (
               <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
                 {Array.isArray(actions) ? (
@@ -62,24 +54,41 @@ const {
                 )}
               </div>
             )
-          }
+          } -->
         </div>
         {content && <Fragment set:html={content} />}
       </div>
-      <div>
-        {
-          image && (
-            <div class="relative m-auto max-w-5xl">
-              {typeof image === 'string' ? (
-                <Fragment set:html={image} />
-              ) : (
-              <img {...image} width={"100%"} height={"auto"} alt="A rocketship in space." />
-              )}
-
-            </div>
-          )
-        }
-      </div>
     </div>
   </div>
+  <div class="images relative">
+    <img src="/original.jpg" alt="original" class="original absolute inset-0 w-full h-full object-cover" />
+    <img src="/segmented.png" alt="segmented" class="segmented absolute inset-0 w-full h-full object-cover" />
+  </div>
 </section>
+
+<style>
+  @keyframes fadeInAndOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images {
+    flex-grow: 1;
+  }
+
+  img.segmented {
+    animation: fadeInAndOut 10s ease-in-out infinite;
+  }
+</style>
