@@ -17,7 +17,7 @@ const {
 } = Astro.props;
 
 function isBrowser() {
-  return typeof window !== "undefined";
+  return typeof window !== 'undefined';
 }
 
 async function fetchGitHubUser(githubUrl) {
@@ -71,7 +71,7 @@ const processedTestimonials = await Promise.all(
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
     {
       processedTestimonials &&
-        processedTestimonials.map(({ name, job, image }) => (
+        processedTestimonials.map(({ name, job, image, bio }) => (
           <div class="flex flex-col items-center justify-between h-auto w-full max-w-sm p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600">
             {image && (
               <div class="flex-grow flex items-center justify-center p-4">
@@ -89,11 +89,13 @@ const processedTestimonials = await Promise.all(
             <div class="text-center mt-4">
               {name && <p class="text-lg font-semibold">{name}</p>}
               {job && <p class="text-xs text-muted">{job}</p>}
+              {bio && <p class="text-sm text-muted mt-2">{bio}</p>}
             </div>
           </div>
         ))
     }
   </div>
+
   {
     callToAction && (
       <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">

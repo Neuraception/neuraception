@@ -1,11 +1,7 @@
 ---
-import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -17,109 +13,18 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="About us"
-  
-  >
+  <Hero tagline="About us">
     <Fragment slot="title">
       Empowering Vision with <br />
       <span class="text-accent dark:text-white highlight"> AI-Driven Precision</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Neuraception is at the forefront of AI vision technology, providing cutting-edge solutions for classification, detection, segmentation, heatmaps, and more. Our state-of-the-art models are customized to meet the unique demands of our clients, ensuring precision, scalability, and complete data security through offline, isolated operations.
+      Neuraception is at the forefront of AI vision technology, providing cutting-edge solutions for classification,
+      detection, segmentation, heatmaps, and more. Our state-of-the-art models are customized to meet the unique demands
+      of our clients, ensuring precision, scalability, and complete data security through offline, isolated operations.
     </Fragment>
   </Hero>
-
-  <!-- Stats Widget ****************** -->
-<!-- 
-  <Stats
-    title="Neuraception by the Numbers"
-    stats={[
-      { title: 'Global Locations', amount: '4' },
-      { title: 'AI Models Deployed', amount: '500+' },
-      { title: 'Industries Served', amount: '50+' },
-      { title: 'Years in AI', amount: '10+' },
-    ]}
-  /> -->
-
-  <!-- Features3 Widget ************** -->
-
-  <!-- <Features3
-    title="Our AI Vision Solutions"
-    subtitle="At Neuraception, we specialize in delivering top-tier AI vision models tailored to a variety of industries, ensuring that our clients receive solutions that are both powerful and secure."
-    columns={3}
-    isBeforeContent={true}
-    items={[
-      {
-        title: 'Classification Models',
-        description:
-          'Our classification models are designed to accurately identify and categorize objects within images or videos, providing reliable insights across various applications.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Detection Models',
-        description:
-          'Neuraception’s detection models offer precision in identifying objects, ensuring every detail is captured for informed decision-making.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Segmentation Models',
-        description:
-          'Our segmentation models deliver pixel-perfect accuracy, allowing for detailed analysis and high-resolution insights.',
-        icon: 'tabler:template',
-      },
-    ]}
-  /> -->
-
-  <!-- Features3 Widget ************** -->
-<!-- 
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Heatmaps',
-        description:
-          'Visualize areas of interest within images or videos with our heatmap models, ideal for pattern recognition and detailed analysis.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Custom AI Solutions',
-        description:
-          'Neuraception offers bespoke AI solutions, crafted to meet the specific needs of our clients, ensuring optimal performance and relevance.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Real-time Processing',
-        description:
-          'Experience the power of real-time data processing with our AI models, designed to provide instant insights and enhanced operational efficiency.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Offline Operations',
-        description:
-          'Our models operate completely offline, ensuring that your data remains secure and private, without the need for cloud-based services.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Scalability',
-        description:
-          'Neuraception’s solutions are built to scale, providing flexibility and adaptability as your needs evolve.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Support & Maintenance',
-        description:
-          'We provide ongoing support and maintenance, ensuring that our AI models continue to perform at their best, long after deployment.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
-    }}
-  /> -->
 
   <!-- Steps2 Widget ****************** -->
 
@@ -145,81 +50,41 @@ const metadata = {
     ]}
   />
 
-  <!-- Steps2 Widget ****************** -->
-
-  <!-- <Steps2
-    title="Our Achievements"
-    subtitle="Over the years, Neuraception has established itself as a leader in AI vision technology, with a strong global presence and numerous accolades to our name."
-    isReversed={true}
-    callToAction={{
-      text: 'Learn more',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Global Impact',
-        description: 'With operations spanning four continents, Neuraception is making a global impact in AI vision technology.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Client Satisfaction',
-        description:
-          'Our clients consistently provide positive feedback, praising our solutions for their precision, reliability, and security.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Industry Recognition',
-        description:
-          'Neuraception has been recognized as an industry leader, earning numerous awards for innovation and excellence in AI.',
-        icon: 'tabler:award',
-      },
-    ]}
-  /> -->
-
-  <!-- Features2 Widget ************** -->
-
-  <!-- <Features2
-    title="Our Locations"
-    tagline="Find Us"
-    columns={3}
-    items={[
-      {
-        title: 'United States',
-        description: '1234 AI Way, Innovation City, CA 94043',
-      },
-      {
-        title: 'Bangladesh',
-        description: '5678 AI Avenue, Madrid, 28001',
-      },
-      {
-        title: 'Nepal',
-        description: '9012 AI Boulevard, Sydney, NSW 2000',
-      },
-  
-    ]}
-  /> -->
-
-
-
   <Testimonials
-  title="Team Neuraception"
-  testimonials={[
-    {
-      githubLink: 'https://api.github.com/users/manishrajosti',
-      job: 'CEO',
-    },
-    {
-      githubLink: 'https://api.github.com/users/claytonleonardcook',
-      job: 'Technical Lead',
-    },
-    {
-      githubLink: 'https://api.github.com/users/rakibulll',
-      job: 'Technical Lead',
-    },
-  ]}
-
-/>
-
+    title="Team Neuraception"
+    testimonials={[
+      {
+        name: 'Manish Raj Osti',
+        job: 'CEO',
+        image: { src: './Manish.png' },
+        bio: 'With a wealth of experience in AI and Computer Vision, Manish focuses on implementing innovative AI strategies that address the unique needs of various industries. His hands-on approach ensures that Neuraception’s solutions are both practical and cutting-edge.',
+      },
+      {
+        name: 'Clayton Cook',
+        job: 'CTO',
+        image: { src: './clay.jpeg' },
+        bio: 'Clayton drives technological innovations across both frontend and backend at Neuraception. His expertise in full-stack development and machine learning ensures robust and scalable systems. Clayton is also deeply involved in tailoring products to meet customer needs, ensuring that Neuraception’s platforms remain at the forefront of AI technology.',
+      },
+      {
+        name: 'Rakibul Hassan',
+        job: 'CPO',
+        image: { src: './rakibul.png' },
+        bio: 'Rakibul plays a crucial role in shaping product strategy and execution, with a strong emphasis on frontend development. He works closely with customers to tailor solutions that exceed expectations, ensuring that Neuraception’s products are not only user-centric but also aligned with the company’s mission of delivering cutting-edge AI solutions.',
+      },
+      {
+        name: 'Siona B.',
+        job: 'Lead Frontend Engineer',
+        image: { src: './Siona.png' },
+        bio: 'Siona specializes in creating seamless and intuitive user interfaces. With a strong focus on frontend development, she ensures that the user experience is at the core of every product, enabling Neuraception to deliver visually appealing and highly functional AI-driven platforms.',
+      },
+      {
+        name: 'Rajesh Upadhayaya',
+        job: 'Lead AI Engineer & Researcher',
+        image: { src: './Rajesh.png' },
+        bio: 'Rajesh, currently pursuing his PhD in AI, specializes in the development and deployment of state-of-the-art AI algorithms. His strong background in full-stack development, combined with a passion for advancing AI research, ensures that Neuraception’s AI models are not only cutting-edge but also practical and scalable.',
+      },
+    ]}
+  />
 
   <!-- Features2 Widget ************** -->
 
@@ -231,7 +96,7 @@ const metadata = {
       {
         title: 'Email Us',
         description:
-          'Our support team is available to assist you with any questions or issues you may have. Reach out to us via email at support@neuraception.com for quick responses.',
+          'Our support team is available to assist you with any questions or issues you may have. Reach out to us via email at info@neuraception.com for quick responses.',
         icon: 'tabler:messages',
       },
       {
